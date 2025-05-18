@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agenda Digital - UBS/SUS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agenda Digital</h1>
+    <form id="agendamentoForm">
+      <input type="text" id="nome" placeholder="Nome completo" required />
+      <input type="text" id="cpf" placeholder="CPF" required />
+      <input type="text" id="telefone" placeholder="Telefone" />
+      <input type="text" id="endereco" placeholder="Endereço" />
+      <input type="text" id="especialidade" placeholder="Especialidade médica" required />
+      <input type="date" id="data_consulta" required />
+      <button type="submit">Agendar Consulta</button>
+    </form>
+    <div id="mensagem"></div>
+    <h2>Consultas Agendadas</h2>
+    <ul id="listaAgendamentos"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
